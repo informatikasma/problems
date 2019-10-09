@@ -12,9 +12,9 @@ def compiles():
     check50.c.compile("celcius.c", lcs50=True)
 
 @check50.check(compiles)
-def test98.6():
-    """98.6 degrees Fahrenheit yields 37 degrees Celcius"""
-    check50.run("./celcius").stdin("98.6").stdout(number(37.0), "37.0\n").exit(0)
+def test98point6():
+    """98.6 degrees Celsius yields 37 degrees Fahrenheit"""
+    check50.run("./celcius").stdin("98.6").stdout(number(37.6), "37.6\n").exit(0)
 
 @check50.check(compiles)
 def test32():
