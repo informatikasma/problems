@@ -25,4 +25,3 @@ def deni():
 def ucup():
     """responds to name Ucup"""
     check50.run("./hello").stdin("Ucup").stdout("Ucup").exit()
- 
