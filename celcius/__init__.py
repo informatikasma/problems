@@ -13,7 +13,7 @@ def compiles():
 
 @check50.check(compiles)
 def test98point6():
-    """98.6 degrees Celsius yields 37 degrees Fahrenheit"""
+    """98.6 degrees Fahrenheit yields 37 degrees Celcius"""
     check50.run("./celcius").stdin("98.6").stdout(number(37.0), "37.0\n").exit(0)
 
 @check50.check(compiles)
